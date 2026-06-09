@@ -1,10 +1,10 @@
-# 💰 Expense Tracker Application
+#  Expense Tracker Application
 
 Full-stack personal finance manager built with **Java 17 + Spring Boot 3 + MySQL + React (Vite)**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 expense-tracker/
@@ -57,7 +57,7 @@ expense-tracker/
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 | Tool        | Version   | Download |
 |-------------|-----------|----------|
@@ -69,7 +69,7 @@ expense-tracker/
 
 ---
 
-## 🗄️ Database Setup
+##  Database Setup
 
 ```sql
 -- Run in MySQL Workbench or CLI
@@ -83,7 +83,7 @@ FLUSH PRIVILEGES;
 
 ---
 
-## 🔧 Backend Setup
+##  Backend Setup
 
 ### 1. Configure Database
 
@@ -111,7 +111,7 @@ Backend starts on: **http://localhost:8080**
 
 ---
 
-## 🎨 Frontend Setup
+##  Frontend Setup
 
 ```bash
 cd frontend
@@ -125,7 +125,7 @@ Frontend starts on: **http://localhost:3000**
 
 ---
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### Auth (Public)
 | Method | Endpoint              | Body                          | Description         |
@@ -133,7 +133,7 @@ Frontend starts on: **http://localhost:3000**
 | POST   | `/api/auth/register`  | `{name, email, password}`     | Register new user   |
 | POST   | `/api/auth/login`     | `{email, password}`           | Login, returns JWT  |
 
-### Income (🔒 JWT Required)
+### Income ( JWT Required)
 | Method | Endpoint              | Body                                    | Description         |
 |--------|-----------------------|-----------------------------------------|---------------------|
 | GET    | `/api/incomes`        | —                                       | Get all incomes     |
@@ -142,7 +142,7 @@ Frontend starts on: **http://localhost:3000**
 | PUT    | `/api/incomes/{id}`   | `{amount, source, date, description}`   | Update income       |
 | DELETE | `/api/incomes/{id}`   | —                                       | Delete income       |
 
-### Expenses (🔒 JWT Required)
+### Expenses ( JWT Required)
 | Method | Endpoint              | Body                                      | Description         |
 |--------|-----------------------|-------------------------------------------|---------------------|
 | GET    | `/api/expenses`       | —                                         | Get all expenses    |
@@ -151,14 +151,14 @@ Frontend starts on: **http://localhost:3000**
 | PUT    | `/api/expenses/{id}`  | `{amount, category, date, description}`   | Update expense      |
 | DELETE | `/api/expenses/{id}`  | —                                         | Delete expense      |
 
-### Dashboard (🔒 JWT Required)
+### Dashboard ( JWT Required)
 | Method | Endpoint         | Description                              |
 |--------|------------------|------------------------------------------|
 | GET    | `/api/dashboard` | Total income, expense, balance, monthly summary, recent transactions |
 
 ---
 
-## 🧪 Testing with Postman
+##  Testing with Postman
 
 ### Step 1 — Register
 ```json
@@ -219,7 +219,7 @@ Content-Type: application/json
 
 ---
 
-## 🎨 Frontend Features
+##  Frontend Features
 
 | Page       | Features                                                                 |
 |------------|--------------------------------------------------------------------------|
@@ -230,7 +230,7 @@ Content-Type: application/json
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 React (Vite)  →  Spring Boot Controller  →  Service  →  Repository (JPA)  →  MySQL
@@ -247,7 +247,7 @@ React (Vite)  →  Spring Boot Controller  →  Service  →  Repository (JPA)  
 
 ---
 
-## 🔒 Security Notes
+##  Security Notes
 
 - Passwords hashed with **BCrypt** (Spring Security default strength)
 - JWT signed with **HS256** (HMAC-SHA256)
@@ -257,7 +257,7 @@ React (Vite)  →  Spring Boot Controller  →  Service  →  Repository (JPA)  
 
 ---
 
-## 🚀 Production Checklist
+##  Production Checklist
 
 - [ ] Change `app.jwt.secret` to a strong random secret (32+ chars)
 - [ ] Set `spring.jpa.hibernate.ddl-auto=validate` (never `update` in production)
@@ -268,7 +268,7 @@ React (Vite)  →  Spring Boot Controller  →  Service  →  Repository (JPA)  
 
 ---
 
-## 📦 Tech Stack Summary
+##  Tech Stack Summary
 
 | Layer          | Technology                      |
 |----------------|---------------------------------|
@@ -283,4 +283,4 @@ React (Vite)  →  Spring Boot Controller  →  Service  →  Repository (JPA)  
 
 ---
 
-*Built with ❤️ — Expense Tracker v1.0*
+*Built with — Expense Tracker v1.0*
